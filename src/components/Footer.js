@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ScrollUpButton from "react-scroll-up-button";
+
 
 export default class Footer extends Component {
     render(){
@@ -11,7 +11,7 @@ export default class Footer extends Component {
                           &copy; Copyright 2020 Vivek Budithi
                             <ul className ="social-links">
                               {
-                                 resumeData.socialLinks && resumeData.Data.scoialLinks.map ((item) => {
+                                 resumeData.socialLinks && resumeData.socialLinks.map ((item) => {
                                      return(
                                          <li>
                                              <a href = {item.url}>
@@ -24,6 +24,7 @@ export default class Footer extends Component {
                             </ul>
                      </div>    
                  </div>
+            
              </footer>
          );
     }

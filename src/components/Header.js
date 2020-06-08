@@ -35,18 +35,17 @@ export default class Header extends Component {
                          resumeData.socialLinks && resumeData.socialLinks.map(item =>{
                            return(
                                     <li key={item.name}>
-                                    <a href={item.url} target="_blank"><i className={item.className}></i></a>
+                                    <a href={item.url} target="_blank">
+                                       <i className={item.className}></i>
+                                    </a>
                                     </li>
                                   )
                            }
                          )
                        }
                    </ul>
-                </div>
-                
+                </div> 
          </div>
-       
-
          <div className="row banner">    
 
             <div className="banner-text">
@@ -70,25 +69,25 @@ export default class Header extends Component {
                            <div>
                              <h3 class="tech"> BACK END</h3>       
                              <div>
-                               <h4 class= "method">PHP- Laravel, Node.js & Express.js</h4>
+                               <h4 class= "method">PHP - Laravel, Node.js, Express.js</h4>
                              </div>
                           </div>                                               
                           <div>
                              <h3 class="tech"> DATABASE</h3>       
                              <div>
-                               <h4 class= "method">MySQL, MongoDB, GraphQl, Firebase</h4>
+                               <h4 class= "method">MySQL, MongoDB, Firebase</h4>
                              </div>
                           </div>               
                            <div>
                              <h3 class="tech"> CLOUD</h3>       
                              <div>
-                               <h4 class= "method"> NEtlify,Anize, Docker, Heroku</h4>
+                               <h4 class= "method"> Anize, Docker, netfliy, Heroku</h4>
                              </div>
                           </div>                       
                             <div>
                              <h3 class="tech"> OTHERS</h3>       
                              <div>
-                               <h4 class= "method">Wordpress, Magento, Git, Rest API</h4>
+                               <h4 class= "method">Wordpress, Magento, Git, GraphQl, Rest API</h4>
                              </div>
                           </div>                     
                           

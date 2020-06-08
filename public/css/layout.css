@@ -12,7 +12,6 @@
    d. Resume Section
    e. Portfolio Section
    f. Call To Action Section
-   g. Testimonials Section
    h. Contact Section
    i. Footer
 
@@ -22,7 +21,7 @@
 /* a. General Styles
 /* ------------------------------------------------------------------ */
 
-body { background: #0f0f0f; }
+body { background:black; }
 
 /* ------------------------------------------------------------------ */
 /* b. Header Styles
@@ -49,8 +48,18 @@ header .banner {
    display: inline-block;
    vertical-align: middle;
    margin: 0 auto;
-   width:40%;
+   width: 40%;
    padding-bottom: 30px;
+
+}
+
+
+header .profile-pic{
+   width: auto;
+   height: auto;
+   border-radius: 50%;
+   padding:0%
+  
 }
 
 header .banner-text { width: 100%; }
@@ -87,8 +96,9 @@ header .social {
    text-shadow: 0px 1px 2px rgba(0, 0, 0, .8);
    transition: transform 300ms;
 }
+
 header .social li {
-   display: inline-block;
+   display: inline-block;  
    margin: 0 15px;
    padding: 0;
 }
@@ -98,33 +108,12 @@ header .social li a {
    margin: 0 1rem;
    transition: transform 300ms;
  }
- header .social li a:hover {
-   color: #11ABB0;
-   transform: translateY(-18px);
-   }
+header .social li a:hover {
+    color: #11ABB0;
+    transform: translateY(-18px);
+    }
 
 
-/* scrolldown link */
-header .scrolldown a {
-   position: absolute;
-   bottom: 30px;
-   left: 50%;
-   margin-left: -29px;
-   color: #fff;
-   display: block;
-   height: 42px;
-   width: 42px;
-   font-size: 42px;
-   line-height: 42px;
-   color: #fff;
-   border-radius: 100%;
-
-   -webkit-transition: all .3s ease-in-out;
-   -moz-transition: all .3s ease-in-out;
-   -o-transition: all .3s ease-in-out;
-   transition: all .3s ease-in-out;
-}
-header .scrolldown a:hover { color: #11ABB0; }
 
 /* primary navigation
 --------------------------------------------------------------------- */
@@ -189,54 +178,6 @@ ul#nav li a:active { background-color: transparent !important; }
 ul#nav li.current a { color: #F06000; }
 
 
-/* ------------------------------------------------------------------ */
-/* c. About Section
-/* ------------------------------------------------------------------ */
-
-#about {
-   background: #2B2B2B;
-   padding-top: 96px;
-   padding-bottom: 66px;
-   overflow: hidden;
-}
-
-#about a, #about a:visited  { color: #fff; }
-#about a:hover, #about a:focus { color: #11ABB0; }
-
-#about h2 {
-   font: 22px/30px 'opensans-bold', sans-serif;
-   color: #fff;
-   margin-bottom: 12px;
-}
-#about p {
-   line-height: 30px;
-   color: #7A7A7A;
-}
-#about .profile-pic {
-   position: relative;
-   width: 120px;
-   height: 120px;
-   border-radius: 100%;
-}
-#about .contact-details { width: 41.66667%; }
-#about .download {
-   width: 58.33333%;
-   padding-top: 6px;
-}
-#about .main-col { padding-right: 5%; }
-#about .download .button {
-   margin-top: 6px;
-   background: #444;
-}
-#about .download .button:hover {
-   background: #fff;
-   color: #2B2B2B;
-}
-#about .download .button i {
-   margin-right: 15px;
-   font-size: 20px;
-}
-
 
 /* ------------------------------------------------------------------ */
 /* d. Resume Section
@@ -288,9 +229,33 @@ ul#nav li.current a { color: #F06000; }
    margin-top: 6px;
 }
 
-/*----------------------------------------------*/
-/*	Skills Cards
-/*----------------------------------------------*/
+
+/* Right side Skills card*/
+
+  /* 
+@media screen and (min-width: 60em) {
+    
+
+.method::after {
+ display: block;
+ content: '';
+  width: 100%;
+  height: 1px;
+  background: black;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.method {
+position: relative;  
+}
+
+.main-area {padding: 6em;}
+
+.cards h2 {font-size: 4.5em;}
+
+/* Flexbox */
 
 .main-area {padding: 6em;}
 .cards h2 {font-size: 4.5em;}
@@ -415,49 +380,7 @@ ul#nav li.current a { color: #F06000; }
     }
 }
 
-
-/*
-.bars {
-	width: 95%;
-	float: left;
-	padding: 0;
-	text-align: left;
-}
-.bars .skills {
-  	margin-top: 36px;
-   list-style: none;
-}
-.bars li {
-   position: relative;
-  	margin-bottom: 60px;
-  	background: #ccc;
-  	height: 42px;
-  	border-radius: 3px;
-}
-.bars li em {
-	font: 15px 'opensans-bold', sans-serif;
-   color: #313131;
-	text-transform: uppercase;
-   letter-spacing: 2px;
-	font-weight: normal;
-   position: relative;
-	top: -36px;
-}
-.bar-expand {
-   position: absolute;
-   left: 0;
-   top: 0;
-
-   margin: 0;
-   padding-right: 24px;
-  	background: #313131;
-   display: inline-block;
-  	height: 42px;
-   line-height: 42px;
-   border-radius: 3px 0 0 3px;
-}
-
-.photoshop {
+/*.photoshop {
   	width: 60%;
   	-moz-animation: photoshop 2s ease;
   	-webkit-animation: photoshop 2s ease;
@@ -537,6 +460,8 @@ ul#nav li.current a { color: #F06000; }
   0%   { width: 0px;  }
   100% { width: 50%;  }
 }
+
+
 */
 /* ------------------------------------------------------------------ */
 /* e. Portfolio Section
@@ -566,7 +491,7 @@ ul#nav li.current a { color: #F06000; }
 .portfolio-item .item-wrap {
 
    overflow: hidden;
-   position:relative
+   position:relative;
 
    -webkit-transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;
@@ -599,7 +524,6 @@ ul#nav li.current a { color: #F06000; }
 
 }
 
-
 .portfolio-item .item-wrap .link-icon {
    display:block;
    color: #fff;
@@ -631,7 +555,6 @@ ul#nav li.current a { color: #F06000; }
  
  }
 
-
 .portfolio-item .portfolio-item-meta { padding: 100px }
 .portfolio-item .portfolio-item-meta h5 {
    font: 25px/21px 'URW Chancery L', cursive;
@@ -656,10 +579,10 @@ ul#nav li.current a { color: #F06000; }
 	filter:alpha(opacity=100);
 }
 .portfolio-item .item-wrap:hover img{
-   height: 450px;
-   width: 450px;
-   transition: all .3s ease-in-out;
+   transition: 0.6s;
+   transform: scale(1.2);
  }
+ 
  
 
 /* popup modal */
@@ -691,20 +614,7 @@ ul#nav li.current a { color: #F06000; }
 .popup-modal .description-box .categories i {
    margin-right: 8px;
 }
-.popup-modal .link-box {
-   padding: 18px 36px;
-   background: #111;
-   text-align: left;
-}
-.popup-modal .link-box a {
-   color: #fff;
-	font: 11px/21px 'opensans-bold', sans-serif;
-	text-transform: uppercase;
-   letter-spacing: 3px;
-   cursor: pointer;
-}
-.popup-modal a:hover {	color: #00CCCC; }
-.popup-modal a.popup-modal-dismiss { margin-left: 24px; }
+
 
 
 /* fadein/fadeout effect for modal popup
@@ -939,8 +849,8 @@ call-to-action .button {
 /* ------------------------------------------------------------------ */
 
 #contact {
-   background: #191919;
-   padding-top: 96px;
+   background: #606060;
+   padding-top: 200px;
    padding-bottom: 102px;
    color: #636363;
 }
@@ -950,9 +860,9 @@ call-to-action .button {
 #contact a:hover, #contact a:focus { color: #fff; }
 
 #contact h1 {
-   font: 18px/24px 'opensans-bold', sans-serif;
+   font: 22px/24px 'opensans-bold', sans-serif;
    text-transform: uppercase;
-   letter-spacing: 3px;
+   letter-spacing: 5px;
    color: #EBEEEE;
    margin-bottom: 6px;
 }
@@ -974,8 +884,11 @@ call-to-action .button {
    margin-bottom: 6px;
 }
 #contact p.lead {
-   font: 18px/36px 'opensans-light', sans-serif;
+   font: 25px/36px 'Adale Mono', monospace;
    padding-right: 3%;
+   color:black; 
+   display:block;
+   margin-bottom: 75px;
 }
 #contact .header-col { padding-top: 6px; }
 
@@ -1093,7 +1006,7 @@ footer .copyright {
     padding: 0;
  }
 footer .copyright li {
-    display: inline-block;
+    
     margin: 0;
     padding: 0;
     line-height: 24px;
