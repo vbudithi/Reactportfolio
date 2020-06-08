@@ -2,9 +2,8 @@ let resumeData = {
     "imagebaseurl":"",
     "name": "Vivek Budithi",
     "role": "Frontend Developer",
-    "linkedinId":"Your LinkedIn Id",
-    "skypeid": "Your skypeid",
-    "roleDescription": "I like dabbling in various parts of frontend development and like to learn about new technologies, write technical articles or simply play games in my free time.",
+    "linkedinId":"Vivek Budithi",
+    "roleDescription": "with a passion for the development of web application and successful in managing the web development projects using Scrum and Agile process. Experienced in new conceptualized designing and development. Dedicated to operate innovation that suits business needs and following technological trends.",
     "socialLinks":[
         {
           "name":"linkedin",
