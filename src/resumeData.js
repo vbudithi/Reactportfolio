@@ -3,7 +3,7 @@ let resumeData = {
     "name": "Vivek Budithi",
     "role": "Frontend Developer",
     "linkedinId":"Vivek Budithi",
-    "roleDescription": "with a passion for the development of web application and successful in managing the web development projects using Scrum and Agile process. Experienced in new conceptualized designing and development. Dedicated to operate innovation that suits business needs and following technological trends.",
+    "roleDescription": "with a passion for the development of web application and successful in managing the web development projects. Dedicated to operate innovation that suits business needs and following technological trends.",
     "socialLinks":[
         {
           "name":"linkedin",
