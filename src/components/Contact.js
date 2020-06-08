@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ScrollUpButton from "react-scroll-up-button";
 
-export default class ContactUs extends Component {
+export default class Contact extends Component {
   render() {
             
     return (
