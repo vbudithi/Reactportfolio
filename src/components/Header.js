@@ -70,25 +70,25 @@ export default class Header extends Component {
                            <div>
                              <h3 class="tech"> BACK END</h3>       
                              <div>
-                               <h4 class= "method">PHP, Node.js & Express.js</h4>
+                               <h4 class= "method">PHP- Laravel, Node.js & Express.js</h4>
                              </div>
                           </div>                                               
                           <div>
                              <h3 class="tech"> DATABASE</h3>       
                              <div>
-                               <h4 class= "method">MySQL, MongoDB</h4>
+                               <h4 class= "method">MySQL, MongoDB, GraphQl, Firebase</h4>
                              </div>
                           </div>               
                            <div>
                              <h3 class="tech"> CLOUD</h3>       
                              <div>
-                               <h4 class= "method"> Firebase DB, Heroku</h4>
+                               <h4 class= "method"> NEtlify,Anize, Docker, Heroku</h4>
                              </div>
                           </div>                       
                             <div>
                              <h3 class="tech"> OTHERS</h3>       
                              <div>
-                               <h4 class= "method">Git, Rest API, JWT</h4>
+                               <h4 class= "method">Wordpress, Magento, Git, Rest API</h4>
                              </div>
                           </div>                     
                           
